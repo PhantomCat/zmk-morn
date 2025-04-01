@@ -1,14 +1,19 @@
 #include "morn.dtsi"
 
 &kscan0 {
+    row-gpios
+        = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row A
+        , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row B
+        , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row C
+        ;
     col-gpios
-        = <&pro_micro 15 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 2 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 3 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        = <&pro_micro 9  GPIO_ACTIVE_HIGH>
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 9 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 16 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 3  GPIO_ACTIVE_HIGH>
+        , <&pro_micro 2  GPIO_ACTIVE_HIGH>
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         ;
 };
 
