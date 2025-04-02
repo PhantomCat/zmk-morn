@@ -26,10 +26,10 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------------------------
-// |   `      |  Q  |  W  |  E  |  R  |  T  |  ENT/LOW |     |  ESC/LOW  |  Y  |  U  |  I  |  O  |  P  |  [  |
-// | TAB/CTRL |  A  |  S  |  D  |  F  |  G  |  SHFT/SP |     |  SHFT/BS  |  H  |  J  |  K  |  L  |  ;  |  '  |
-// | CAPS/ALT |  Z  |  X  |  C  |  V  |  B  |  GUI/TAB |     |  RISE/DEL |  N  |  M  |  ,  |  .  |  /  |  \  |
+// --------------------------------------------------------------------------------------------------------------
+// |   `      |  Q  |  W  |  E  |  R  |  T  |  LOW/ENT  |     |  LOW/ESC  |  Y  |  U  |  I  |  O  |  P  |  [     |
+// | TAB/CTRL |  A  |  S  |  D  |  F  |  G  |  SHFT/SP  |     |  SHFT/BS  |  H  |  J  |  K  |  L  |  ;  |  '     |
+// | CAPS/ALT |  Z  |  X  |  C  |  V  |  B  |  RISE/TAB |     |  RISE/DEL |  N  |  M  |  ,  |  .  |  /  |  \/GUI |
                         bindings = <
    &kp GRAVE       &kp Q  &kp W  &kp E  &kp R  &kp T  &lt 1 ENTER          &lt 1 ESC        &kp Y  &kp U  &kp I      &kp O    &kp P     &kp LBKT
    &mt LCTRL TAB   &kp A  &kp S  &kp D  &kp F  &kp G  &mt LSHIFT SPACE     &mt RSHIFT BSPC  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
@@ -37,10 +37,10 @@
                         >;
                 };
                 lower_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |   F1     |  F2    |  F3   |  F4  |  F5  |  F6       |    |           |    |  F7       |  F8  |  F9 | F10 | F11 | F12   |
-// | TAB/CTRL |  N1    |  N2   |  N3  |  N4  |  N5       |    |           |    |  N6       |  N7  |  N8 |  N9 |  N0 | MINUS |
-// | CAPS/ALT |  EQUAL | ASTRK | FSLH | LBKT |  layer 1  |    |           |    |  layer 2  |  ]   |  ,  |  .  |  /  |  \    |
+// --------------------------------------------------------------------------------------------------------
+// |   F1     |  F2 |  F3 |  F4 |  F5 |  F6  |    |           |    |  F7   |  F8  |  F9 | F10 | F11 | F12 |
+// | TAB/CTRL |  1  |  2  |  3  |  4  |  5   |    |           |    |  6    |  7   |  8  |  9  |  0  | -   |
+// | CAPS/ALT |  =  |  *  |  /  |  [  |  LOW |    |           |    |  RISE |  ]   |  ,  |  .  |  /  |  \  |
 			bindings = <
    &kp F1   &kp F2     &kp F3     &kp F4    &kp F5    &kp F6  &trans       &trans  &kp F7  &kp F8    &kp F9   &kp F10   &kp F11  &kp F12
    &trans   &kp N1     &kp N2     &kp N3    &kp N4    &kp N5  &trans       &trans  &kp N6  &kp N7    &kp N8   &kp N9    &kp N0   &kp MINUS
@@ -48,7 +48,7 @@
 			>;
 		};
 		raise_layer {
-// ------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------------------
 // |       |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |    |         |     |        |  HOME | PG_UP | PSCRN  |  DEL     | PAUSE_BREAK |
 // |       | BTCLR |       |       |       |       |    |         |     |  LEFT  |  DOWN |  UP   | RIGHT  |  INS     | K_APP       |
 // |       |       |       |       |       |       |    |         |     |  C_PP  |  END  | PG_DN | C_MUTE | C_VOL_DN | C_VOL_UP    |
